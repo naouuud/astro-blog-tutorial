@@ -11,6 +11,11 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1 id="root">My Astro Site</h1>
+		<script>
+			const blog = document.createElement("h1");
+			blog.textContent = "My Astro Bloggie";
+			document.querySelector("#root").appendChild(blog);	
+		</script>
 	</body>
 </html>
